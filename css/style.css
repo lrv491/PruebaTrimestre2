@@ -1,0 +1,136 @@
+@font-face {
+    font-family: 'street';
+    src: url(../font/street.otf) format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+    --crimson-color: crimson;
+    --color-bordes-exteriores: rgb(237, 175, 5);
+    --color-fondo-negro: black;
+}
+
+body{
+    background-image: url('../img/fondo2.jpg');
+    background-size: cover;
+}
+
+/*EJERCICIO 1*/
+h1{
+    font-family: 'street';
+    color: var(--crimson-color);
+    font-size: 46px;
+    text-align: center;
+}
+
+table{
+    width: 600px;
+    height: 800px;
+    margin: auto;
+    border: 10px outset var(--color-bordes-exteriores);
+    border-radius: 10px;
+    background-color: var(--color-fondo-negro);
+    table-layout: fixed;
+}
+
+#celda-cabecera{
+    background-image: url('../img/fondocabecera.jpg');
+    background-size: cover;
+    opacity: 0.5;
+}
+
+#texto-cabecera{
+    font-size: 40px;
+    color: whitesmoke;
+    font-family: 'street';
+}
+
+/*tr{
+    width: 160px;
+    height: 45px;
+}*/
+
+td{
+    width: 40px;
+    height: 45px;
+    font-family: 'street';
+    border: 2px solid grey;
+    border-radius: 10px;
+    font-size: 18px;
+    font-weight: bold;
+    color: darkorange;
+    text-align: center;
+    padding: 0;
+}
+
+
+
+/*EJERCICIO 2*/
+
+h2{
+    font-family: 'street';
+    color: var(--crimson-color);
+    text-align: center;
+    font-size: 28px;
+}
+
+form{
+    width: 600px;
+    height: 1100px;
+    border: 10px outset var(--color-bordes-exteriores);
+    border-radius: 10px;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    background-color: var(--color-fondo-negro);
+    font-size: 16px;
+    margin: auto;
+}
+
+legend{
+    font-family: 'street';
+    font-size: 14px;
+    color: var(--color-bordes-exteriores);
+}
+
+#coment{
+    width: 560px;
+}
+
+.botones{
+    border: 1px solid var(--crimson-color);
+    background-color: var(--crimson-color);
+    font-family:'street';
+    font-size: 18px;
+    color: white;
+    width: 200px;
+    height: 50px;
+    border-radius: 5px;
+    margin-left: 65px;
+    margin-bottom:10px ;
+}
+
+.elemento label{
+    display: block;
+    margin-bottom: 1rem;
+}
+.elemento {
+    margin-bottom: 1rem;
+}
+
+.radio-selector{
+    display: inline-block;
+}
+
+fieldset{
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+
+
+

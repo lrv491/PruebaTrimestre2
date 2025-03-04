@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="img/arcade.png" type="image/x-icon">
+    <title>StreetFighter-UNIR</title>
+</head>
+<body>
+    <!--Ejercicio 1-->
+    <h1>To live is to fight, to fight is to live!</h1>
+
+    <table>
+        <tr>
+            <td colspan="4" id="celda-cabecera">
+                <p id="texto-cabecera">Street Fighter</p>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>Ken</div>
+                <img src="img/ken.png" alt="Ken">
+            </td>
+            <td>
+                <div>Chun li</div>
+                <img src="img/ChunLi.png" alt="Chun Li">
+            </td>
+            <td>
+                <div>Zangief</div>
+                <img src="img/Zangief.png" alt="Zangief">
+            </td>
+            <td>
+                <div>Dhalsim</div>
+                <img src="img/Dhalsim.png" alt="Dhalsim">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>Ryu</div>
+                <img src="img/Ryu.png" alt="Ryu">
+            </td>
+            <td>
+                <div>E Honda</div>
+                <img src="img/EHonda.png" alt="E Honda">
+            </td>
+            <td>
+                <div>Blanka</div>
+                <img src="img/Blanka.png" alt="Blanka">
+            </td>
+            <td>
+                <div>Guille</div>
+                <img src="img/Guille.png" alt="Guille">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>Thawk</div>
+                <img src="img/THawk.png" alt="Thawk">
+            </td>
+            <td>
+                <div>Feilong</div>
+                <img src="img/Feilong.png" alt="Feilong">
+            </td>
+            <td>
+                <div>Dee Jay</div>
+                <img src="img/DeeJay.png" alt="Dee Jay">
+            </td>
+            <td>
+                <div>Cammy</div>
+                <img src="img/Cammy.png" alt="Cammy">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <div>Balrog</div>
+                <img src="img/Balrog.png" alt="Balrog">
+            </td>
+            <td>
+                <div>Vega</div>
+                <img src="img/Vega.png" alt="Vega">
+            </td>
+            <td>
+                <div>Sagat</div>
+                <img src="img/Sagat.png" alt="Sagat">
+            </td>
+            <td>
+                <div>M Bison</div>
+                <img src="img/MBison.png" alt="MBison">
+            </td>
+        </tr>
+    </table>
+
+    <!--Ejercicio 2-->
+    <h2>Formulario de Inscripción para jugar a Street Figther</h2>
+
+    <form action="" method="post">
+        <fieldset>
+            <legend>Datos Personales</legend>
+            <div class="elemento">
+                <label for="name">Nombre:</label>
+                <input type="text" name="name" id="name">
+            </div>
+            <div class="elemento">
+                <label for="apells">Apellidos:</label>
+                <input type="text" name="apells" id="apells">
+            </div>
+
+            <div class="elemento">
+                <label for="dirpos">Direccion Postal:</label>
+                <input type="text" name="dirpos" id="calle" placeholder="Calle">
+                <input type="text" name="dirpos" id="numCasa" placeholder="Numero">
+                <input type="text" name="dirpos" id="piso" placeholder="Piso">
+                <input type="text" name="dirpos" id="codp" placeholder="Cod. Postal">
+                <input type="text" name="dirpos" id="ciudad" placeholder="Ciudad">
+            </div>
+            <div class="elemento">
+                <label for="nick">Nick:</label>
+                <input type="text" name="nick" id="nick">
+            </div>
+            <div class="elemento">
+                <label for="email">Correo Electronico:</label>
+                <input type="email" name="email" id="email">
+            </div>
+        </fieldset>
+        <fieldset>
+            <legend>Sexo Usuario</legend>
+            <div class="radio-selector"><input type="radio" name="genero" id="mujer" value="mujer" class="radio-selector" >Mujer</div>
+            <div class="radio-selector"><input type="radio" name="genero" id="hombre" value="hombre" class="radio-selector">Hombre</div>
+            <div class="radio-selector"><input type="radio" name="genero" id="nodecir" value="otro" class="radio-selector">Prefiero no decir</div>
+        </fieldset>
+        <fieldset>
+            <legend>Fecha Nacimiento</legend>
+            <label for="fnac">Fecha nacimiento:</label>
+            <input type="date" name="fnac" id="fnac">
+        </fieldset>
+        <fieldset>
+            <legend>Personajes</legend>
+            <label for="personaje">Selecciona el Personaje:</label>
+            <select name="personaje">
+                <option value="1">Ken</option>
+                <option value="2">ChunLi</option>
+                <option value="3">Zangief</option>
+                <option value="4">Dhalsim</option>
+                <option value="5">Ryu</option>
+                <option value="6">Otros Personajes</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Comentarios</legend>
+            <textarea name="coment" id="coment"></textarea>
+        </fieldset>
+        <input type="submit" value="Enviar" class="botones">
+        <input type="reset" value="Borrar" class="botones">
+    </form>
+</body>
+</html>
